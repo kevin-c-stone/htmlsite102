@@ -1,0 +1,41 @@
+body {
+    background-color:rgb(179, 170, 170);
+}
+
+
+header, footer, section, nav, li {
+    border: black 1px solid;
+}
+
+header {
+    background-color: azure; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+#section1 {
+    background-color: cornsilk;
+}
+
+#section2 {
+    background-color: darkcyan;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: azure;
+    text-align: center;
+}
+
+img {
+    width: 800px;
+}
