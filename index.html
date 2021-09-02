@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>NFL Teams</title>
+        <title>NFL Conferences</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
         <header>
-            <h1>Which NFL Team do you like best?</h1>
+            <h1>Which NFL Conference?</h1>
+            <h2><script src="app1.js"></script></h2>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>NFC</li>
-                    <li>AFC</li>
+                    <li><button onclick="functionToExecute1()">Home</button></li>
+                    <li><button onclick="functionToExecute2()">About</button></li>
+                    <li><button onclick="functionToExecute3()">NFC</button></li>
+                    <li><button onclick="functionToExecute4()">AFC</button></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
+            <section id="section1">
                 <p>
                     Hat trick midfielder chip goalie three-five-two World Cup African Cup of Nations defender 
                     number 10 halftime pitch red card brace UEFA European Championship. Defender UEFA European 
@@ -27,16 +28,27 @@
                     Championship. Red card pitch hat trick goalie yellow card halftime World Cup number 10 
                     center-half goal one-two defender four-four-two three-five-two referee UEFA European Championship.
                 </p>
-                <img src="https://via.placeholder.com/450x250" id="img1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/American_Football_Conference_logo.svg" id="img1">
             </section>
-            <section>
-                <img src="https://via.placeholder.com/450x250" id="img2">
+            <br>
+            <section id="section2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/National_Football_Conference_logo.svg" id="img2">
                 <p>
                     Brace center-half three-five-two red card one-two number 10 goalie goal yellow card chip 
                     World Cup hat trick striker pitch UEFA European Championship. Soccer striker red card chip 
                     goal forward World Cup referee upper 90 African Cup of Nations three-five-two one-two 
                     four-four-two ball hat trick.
                 </p>
+            </section>
+            <section id="section3">
+                <script src="app2.js"></script>
+            </section>
+            <section id="section4">
+                <p>
+                    Are the Carolina Panthers your favorite NFL team?
+                </p>
+                <button onclick="functionToExecute()">Click</button>
+                <script src="app3.js"></script>
             </section>
         </main>
         <footer>
