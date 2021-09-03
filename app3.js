@@ -2,18 +2,52 @@ function functionToExecute () {
     alert('OF COURSE THEY AREEEEEEEEEE!!!!!')
 }
 
-function functionToExecute1 () {
+function functionHome () {
     alert('Home is where the food is <3')
 }
 
-function functionToExecute2 () {
-    alert('The National Football League is football for the Nation')
+function functionAbout () {
+    alert('The National Football League is foosball for the Nation')
 }
 
-function functionToExecute3 () {
-    alert('National Football Conference')
+function functionNfc () {
+    alert('National Foosball Conference is kewl')
 }
 
-function functionToExecute4 () {
-    alert('American Football Conference')
+function functionAfc () {
+    alert('American Foosball Conference plays foosball too')
+}
+
+function randomNumberGenerator() {
+    // Got the code from W3 Schools & Roger
+    // https://www.w3schools.com/js/js_random.asp
+    let correctAnswer = Math.floor(Math.random() * 100) +1;
+    return correctAnswer;
+}
+
+function theGuessingGame(correctAnswer){
+    let wantToPlay = prompt('Do you want to play a game? (si o no)');
+    console.log(wantToPlay)
+    while (wantToPlay.toLowerCase() == 'si'){
+        let numberOfAttempts = 8;
+        for(let i = 1; i <= numberOfAttempts; i++){
+            userAnswer = prompt("Guess a number between 1 and 100");
+
+            while((userAnswer < 1) || (userAnswer > 100)){
+                userAnswer = prompt("Guess a number between 1 and 100");
+            }
+            if(userAnswer == correctAnswer){
+                alert('You got it right. You have ' + (numberOfAttempts - i) + ' attempts left');
+                break;
+            } else if(userAnswer < correctAnswer){
+                alert('Your answer is to low.  Try Again! You have ' + (numberOfAttempts - i) + ' attempts left');  
+            } else if (userAnswer > correctAnswer){
+                alert('Your answer is to high.  Try Again! You have ' + (numberOfAttempts - i) + ' attempts left');
+            }
+        }
+        wantToPlay = prompt('Do you want to play a game? (yes or no)');
+        if (wantToPlay == 'yes'){
+            correctAnswer = randomNumberGenerator();
+        }
+    }
 }

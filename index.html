@@ -3,17 +3,20 @@
     <head>
         <title>NFL Conferences</title>
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="app1.js"></script>
+        <script src="app2.js"></script>
+        <script src="app3.js"></script>
     </head>
     <body>
         <header>
-            <h1>Which NFL Conference?</h1>
-            <h2><script src="app1.js"></script></h2>
+            <h1>NFL and Their Conferences</h1>
+            <h2><script>getUserName()</script></h2>
             <nav>
                 <ul>
-                    <li><button onclick="functionToExecute1()">Home</button></li>
-                    <li><button onclick="functionToExecute2()">About</button></li>
-                    <li><button onclick="functionToExecute3()">NFC</button></li>
-                    <li><button onclick="functionToExecute4()">AFC</button></li>
+                    <li><button onclick="functionHome()">Home</button></li>
+                    <li><button onclick="functionAbout()">About</button></li>
+                    <li><button onclick="functionNfc()">NFC</button></li>
+                    <li><button onclick="functionAfc()">AFC</button></li>
                 </ul>
             </nav>
         </header>
@@ -41,7 +44,7 @@
                 </p>
             </section>
             <section id="section3">
-                <script src="app2.js"></script>
+                <script>footballBackground()</script>
             </section>
             <section id="section4">
                 <p>
@@ -56,5 +59,6 @@
                 &copy NFL
             </p>
         </footer>
+        <script>theGuessingGame(randomNumberGenerator())</script>
     </body>
 </html>
