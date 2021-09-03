@@ -25,6 +25,8 @@ function randomNumberGenerator() {
     return correctAnswer;
 }
 
+
+// function created by Roger Huba of Code Fellows
 function theGuessingGame(correctAnswer){
     let wantToPlay = prompt('Do you want to play a game? (si o no)');
     console.log(wantToPlay)
@@ -45,7 +47,7 @@ function theGuessingGame(correctAnswer){
                 alert('Your answer is to high.  Try Again! You have ' + (numberOfAttempts - i) + ' attempts left');
             }
         }
-        wantToPlay = prompt('Do you want to play a game? (yes or no)');
+        wantToPlay = prompt('Do you want to play a game? (si o no)');
         if (wantToPlay == 'yes'){
             correctAnswer = randomNumberGenerator();
         }
