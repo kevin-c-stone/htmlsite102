@@ -21,7 +21,7 @@ function functionAfc () {
 function randomNumberGenerator() {
     // Got the code from W3 Schools & Roger
     // https://www.w3schools.com/js/js_random.asp
-    let correctAnswer = Math.floor(Math.random() * 100) +1;
+    let correctAnswer = Math.floor(Math.random() * 150) +1;
     return correctAnswer;
 }
 
@@ -29,12 +29,12 @@ function theGuessingGame(correctAnswer){
     let wantToPlay = prompt('Do you want to play a game? (si o no)');
     console.log(wantToPlay)
     while (wantToPlay.toLowerCase() == 'si'){
-        let numberOfAttempts = 8;
+        let numberOfAttempts = 10;
         for(let i = 1; i <= numberOfAttempts; i++){
-            userAnswer = prompt("Guess a number between 1 and 100");
+            userAnswer = prompt("Guess a number between 1 and 150");
 
             while((userAnswer < 1) || (userAnswer > 100)){
-                userAnswer = prompt("Guess a number between 1 and 100");
+                userAnswer = prompt("Guess a number between 1 and 150");
             }
             if(userAnswer == correctAnswer){
                 alert('You got it right. You have ' + (numberOfAttempts - i) + ' attempts left');
