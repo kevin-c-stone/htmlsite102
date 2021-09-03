@@ -33,7 +33,7 @@ function theGuessingGame(correctAnswer){
         for(let i = 1; i <= numberOfAttempts; i++){
             userAnswer = prompt("Guess a number between 1 and 150");
 
-            while((userAnswer < 1) || (userAnswer > 100)){
+            while((userAnswer < 1) || (userAnswer > 150)){
                 userAnswer = prompt("Guess a number between 1 and 150");
             }
             if(userAnswer == correctAnswer){
